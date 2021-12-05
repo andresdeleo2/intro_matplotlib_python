@@ -30,7 +30,7 @@ if __name__ == '__main__':
     # y4 = raiz_cuadrada(X)
 
     # Implementación:
-    y1 = x**2
+    y1 = x**2 
     y2 = x**3
     y3 = x**4
     y4 = np.sqrt(x)
@@ -53,5 +53,31 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    fig=plt.figure(figsize=(20,20))
+    ax1=fig.add_subplot(2,2,1)
+    ax2=fig.add_subplot(2,2,2)
+    ax3=fig.add_subplot(2,2,3)
+    ax4=fig.add_subplot(2,2,4)
 
+    ax1.plot(x,y1,color='b',label='Y = X^2')
+    ax1.set_title('Grado 2')
+    ax1.legend()
+    ax1.grid('solid')
+
+    ax2.plot(x,y2,color='r',label='Y = X^3')
+    ax2.set_title('Grado 3')
+    ax2.legend()
+    ax2.set_facecolor('whitesmoke')
+    ax2.grid(color='r', linestyle='-', linewidth=1,alpha =0.2)
+    
+    ax3.scatter(x,y3,color = 'k', label = 'Y = X^4')
+    ax3.set_title('Grado 4')
+    ax3.legend()
+    ax3.grid('solid')
+
+    ax4.scatter(x,y4,color = 'm', label = 'Y = X^1/2')
+    ax4.set_title('Raíz Cuadrada')
+    ax4.legend()
+
+    plt.show()
     print("terminamos")

@@ -46,4 +46,11 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure(figsize=(10,10))
+    ax = fig.add_subplot()
+    ax.set_title("Gráfico X^2 y X^3")
+    ax.plot(x,y1,color='b',marker='1',label="X^2")
+    ax.plot(x,y2,color='r',marker='2',label="X^3")
+    ax.legend()
+    plt.show()
     print("terminamos")

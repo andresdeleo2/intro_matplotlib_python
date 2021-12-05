@@ -33,5 +33,13 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
-
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.set_title("Tangente Hiperbólica")
+    ax.scatter(x,y,label = 'Y = TanH(x)',marker = 'x',color = 'y')
+    ax.set_xlabel("Eje X")
+    ax.set_ylabel("Eje Y")
+    ax.legend()
+    plt.show()
+    
     print("terminamos")

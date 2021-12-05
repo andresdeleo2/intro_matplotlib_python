@@ -34,5 +34,14 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure(figsize=(20,20))
+    ax = fig.add_subplot()
+    ax.plot(x,y,color = 'r')
+    ax.set_title("Parabola Y = X^2")
+    ax.set_xlabel("Eje X")
+    ax.set_ylabel("Eje Y")
+    plt.legend()
+    plt.show()
+
 
     print("terminamos")
